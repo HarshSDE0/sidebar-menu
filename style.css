@@ -1,0 +1,161 @@
+*{
+               margin:0px;
+               padding: 0px;
+               font-family: "Poppins", sans-serif;
+}/*Padding & margin is set to zero to give a clean slate to our page*/
+
+/*Now we will do some changes in main box*/
+.main_box{
+               background-image:url("./cameraPic.jpg");
+               background-size: cover;
+               height: 100vh;/*setting height 100% in this case the height will
+               be as per the content fitting
+               
+               so making it to fit to full screen for this main box, set it's height 
+               using vh(viewport height)unit*/
+}
+/*Now we will make some change in btn_one*/
+.btn_one i{
+               color: white;
+               /*by changing size of font we can change the size of an icon*/
+               font-size: 30px;
+               font-weight: 700;
+               position: absolute;/*since, it parent element's position is static
+               so it's position will be with respect to root element i.e; body*/
+               left: 16px;
+               /* top:0px; */
+               line-height: 60px;
+               cursor: pointer;
+               transition: all 0.4s linear;
+
+}/*now we will make changes in sidebar 
+NOTE position of menu ... or sidebar is always set to fixed so that it can be 
+visible even after scrolling 
+*/
+.sidebar_menu{
+               position: fixed;
+               left:-300px;/*this is done to get the effect of slide in 
+               and slide out*/
+               height: 100vh;/*to take up viewport height*/
+               width: 300px;
+               background-color: rgba(255,255,255,0.1);/*to get a glass shade
+               for sidebar menu set it's color to white with alpha value of 0.1*/
+               box-shadow: 0 0 8px rgba(255,255,255,0.5);
+               transition: all 0.4s linear;
+               /*add this transition to all element whereever we have applied
+               hover selector*/
+}
+.sidebar_menu .logo{
+               position: absolute;
+               width: 100%;
+               line-height: 60px;
+               box-shadow: 0 0 4px rgba(255,255,255,0.5);
+               height: 60px;
+
+
+}
+.sidebar_menu .logo a{
+               position: absolute;
+               left: 50px;
+               color: white;
+               text-decoration: none;
+               font-size: 20px;
+               font-weight: 500;
+}
+.btn_two i{
+               color: grey;
+               font-size: 25px;
+               line-height: 60px;
+               position: absolute;   
+               left: 275px;   
+               /*for now hide it*/
+               opacity: 0;/*initially hidden btn 2*/
+               cursor: pointer;
+               transition: all 0.4s linear;
+
+}
+/*now we will manipulate menu*/
+.sidebar_menu .menu{
+               position: absolute;
+               width: 100%;
+               color: white;
+               top: 80px;
+}
+.sidebar_menu .menu li{
+               margin-top: 6px;
+               padding: 14px 20px;
+}
+.sidebar_menu .menu i,a{
+               color: white;
+               text-decoration: none;
+               font-size: 20px;
+}
+/*create some distance between icon and anchor text inside */
+.sidebar_menu .menu i{
+               padding-right: 8px;
+
+}
+/*now give style to social media*/
+.sidebar_menu .social_media{
+               color: rgba(255,255,255,0.4);
+               opacity: 0.5;
+               position: absolute;
+               left: 25%;
+               bottom: 70px;
+}/*to control icons of social media*/
+.sidebar_menu .social_media i{
+               color: white;
+               opacity: 0.5;
+               padding: 0 5px;
+               transition: all 0.4s linear;
+
+}
+input[type="checkbox"]{
+               display: none;
+               /* opacity: 0; */
+               /*Opacity is about hiding elements appearance
+               display:none is about hiding elements completely*/
+}
+.sidebar_menu .menu li:hover{
+               box-shadow: 0px 0px 8px rgba(255,255,255,0.5);
+}
+.btn_one i:hover{
+               transform: scale(1.2);
+               
+}
+.btn_two i:hover{
+               transform: scale(1.2);
+}
+.sidebar_menu .social_media i:hover{
+               opacity: 1;
+               transform: scale(1.2);
+}
+/*~ : is a general sibling selector*/
+/*
+in previous sidebar menu was hidden i.e; it's left is set to -300px
+by using this as we are clicking on menu symbol
+check box getting checked
+and as it gets checkes the side bar menu must be visible becuse
+ */
+#check:checked ~ .sidebar_menu{
+               left: 0px;
+}
+/*as on clicking the menu bar then checkbox gets checked
+and at that time till it is checked we wnat to to be hidden*/
+#check:checked ~ .btn_one{
+               opacity: 0;
+}
+/*inside sidebar menu as we again click on cross 
+side bar gets hidden because once checked then on next tym clicking on cross 
+it will uncheck the checkbox and
+so the sidebar menu will get hidden*/
+
+
+/*initially button two is hidden
+Now we want as our checkbox is checked btn_two should get visible*/
+#check:checked ~ .sidebar_menu .btn_two i{/*btn_two is child element of 
+                                             sidebar_menu which is sibling of 
+                                             checkbox*/
+               opacity: 1;
+}
+/*Note we have added transition so as to give a smooth effect*/

@@ -1,0 +1,206 @@
+<!-- Basic design principle
+Design principles are the fundamental rules that guide the design process. 
+They are the underlying guidelines that help designers
+create effective, aesthetically pleasing, and user-friendly designs.
+Here are some basic design principles:
+1. **Balance**: The arrangement of visual elements to create a sense of stability and harmony.
+2. **Proximity**: The placement of related elements close together to create a clear relationship between them
+3. **Alignment**: The placement of elements along a line or axis to create a sense of order
+4. **Repetition**: The use of similar elements, such as typography, color, or imagery
+5. **Contrast**: The use of different visual elements, such as color, size, or 
+shape, to create visual interest
+6. **Emphasis**: The use of visual elements to draw attention to a particular part of the
+design
+7. **Movement**: The use of visual elements to create a sense of motion or direction
+8. **Pattern**: The use of repetitive elements, such as texture or shape, to create a
+visual rhythm
+9. **Unity**: The use of visual elements to create a sense of oneness or cohesion
+10. **Variety**: The use of different visual elements to create visual interest and
+avoid boredom
+11. **Hierarchy**: The use of size, color, and placement to create a clear order of
+importance
+12. **Typography**: The use of type faces, font sizes, font style, and line spacing to create a
+visual communication
+13. **Color**: The use of color to create mood, contrast, and harmony
+14. **Texture**: The use of texture to create a tactile experience and add depth
+to the design
+15. **Space**: The use of positive and negative space to create a sense of
+breathing room and visual balance
+These principles are not mutually exclusive, and a good design often employs
+ a combination of several principles to create
+
+
+ NOTE: theor on colors
+ 1) not use various colors on same page for making a website 
+ 2) all color on a webpage must not be bright Color
+ 3) consistency of color for a website is one of the most important thing
+ 4) color of background and text must be contrast
+ 5) color of button and link must be different from background color
+ 6) color of logo must be consistent with website color
+ 7) color of website must be consistent with brand color
+ 8) color of website must be consistent with target audience
+ 9) color of website must be consistent with website theme
+ 10) color of website must be consistent with website mood
+ 11) color of website must be consistent with website atmosphere
+ 12) color of website must be consistent with website style
+ 13) color of website must be consistent with website tone
+ 14) color of website must be consistent with website personality
+ 15) color of website must be consistent with website voice
+ 16) color of website must be consistent with website character
+
+
+ COLOR theory
+ Primary color : red, yellow, blue
+ secondary colors are formed of mixture of primary colors
+ primary and secondary colors mixtures provides tertiary color
+ 1) warm color : red, orange, yellow
+ 2) cool color : blue, green, purple
+ 3) neutral color : black, white, gray
+ 4) monochromatic color : different shades of same color
+               In this we use combination of same color shades
+ (subtle color combo)
+ 5) analogous color : colors that are next to each other on color wheel
+ 6) complementary color : colors that are opposite each other on color wheel
+                              (Impactful color combo for highlight & marking 
+                              important)
+7) triadic color : colors that are equally spaced from each other on color wheel
+               this combination is used to form hight contrast combo
+               e.g: combo of red, blue, green
+8) split complementary color : color and two colors on either side of its
+               complementary color
+
+We can visit "canvas color wheel" on google for getting monochromatic
+analogous, complementary, triadic, split complementary color combination 
+
+
+
+ COLOR wheel
+ 1) primary color : red, yellow, blue
+ 2) secondary color : vioilet,green, orange
+ 3) tertiary color : yellow-green, blue-green, blue-violet, red-violet, red-orange
+                              yellow-orange
+
+Every color have some meaning
+list is shown as picture
+
+NOTE : for using any color for particular element first categorize
+that element example
+if we want to symbolize food - it is related to health. so, use green color
+if we want to symbolize technology - it is related to innovation. so, use blue color
+if we want to symbolize love - it is related to passion. so, use red color
+if we want to symbolize nature - it is related to freshness. so, use green color
+if we want to symbolize luxury - it is related to wealth. so, use gold color or 
+                              black grey & white mixture 
+if we want to symbolize finance - use blue
+if we want to symbolize entertainment or hungriness - use combo of red & orange
+
+TYPOGRAPHY:
+STYLE & APPEARANCE OF TEXT
+BY STYLE WE MEAN : color, font-style, font-size 
+
+Below is the example of typography
+jitna important hmara color hota hai utni hi important hmari typography hoti hai
+
+Every font-style(style in which it is written + it's color) convey some meaning
+
+text with same font-family but different color conveys different meaning
+like for portfolio we will use some proffesional font-style
+like for blog we will use some casual font-style
+like for news we will use some formal font-style
+like for children we will use some playful font-style
+like for selling ice-cream use some fun font-style
+like for selling medicine use some serious font-style
+like for museum we will sue some historic representaional, seriousness font-style
+
+Different font-families
+1) sans-serif
+2) serif
+3) monospace
+4) cursive
+5)fantasy
+etc
+
+These font-families are group of font-styles with same characteristics
+
+
+ON a website there are various sections 
+like header, main, footer, aside 
+in every section we can only use 2 font-styles
+& in a webpage proffesionalism must be maitained so prefer minimal change of font-family
+
+
+
+GOOGLE FONTS(library of fonts, in which there are many free fonts)
+used to set typography
+visit : https://fonts.google.com
+
+for using particular style 
+step 1 : click on embed code
+step 2 : there are several options where to use those fonts
+step 3 : copy the link tag and paste it in head tag of html file
+step 4 : use the font-family in css file
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+               <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Document</title>
+               <!--Font link
+               preconect stating that it needs to connect to those 
+               two pages to use them
+
+               -->
+               <link rel="preconnect" href="https://fonts.googleapis.com">
+               <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+               <link href="https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne&family=Roboto&display=swap" rel="stylesheet">
+               <style>
+                              #test1{
+                                        font-weight: 100;     
+                              }
+                              #test2,#test3{
+                                             font-family:cursive;
+                                             font-weight: bolder;
+                              }
+                              #test3{
+                                             color: red;
+                              }
+                              #G_fonts{
+                                             font-family: "Playwrite FR Moderne", cursive;
+                                             font-optical-sizing: auto;
+                                             font-weight: 400;
+                                             font-style: normal;
+                                             display: inline;
+                              }
+                              
+               </style>
+               <!--Link to use icons-->
+               <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+               
+</head>
+<body>
+               <h1 id="test1">I am waiting for you!</h1>
+               <h1 id="test2">I am waiting for you!</h1>
+               <h1 id="test3">I am waiting for you!</h1>
+               <h1 id="G_fonts">Apna college</h1>
+               <!--Next link is link of menu icon-->
+               <span class="material-symbols-outlined">
+                              menu
+                              </span>
+</body>
+</html>
+<!--
+There are many icons used on a website
+like, settings, globe, star, filter, menu, search
+these icons can be used available on google icons
+
+https://fonts.google.com/icons 
+FONT AWSOME: FOR USING THIS WE NEED TO COPY LINK FROM
+
+NOTE copy the link part of icon from "static icon font"
+and paste it in head tag of html file
+and then copy the html code & paste it inside html code whereever we want
+
+<i> tag is used to create icons
+
+-->
